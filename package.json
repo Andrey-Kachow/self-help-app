@@ -2,9 +2,11 @@
   "name": "self-help-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Andrey-Kachow.github.io/self-help-app",
+  "homepage": "https://andrey-kachow.github.io/self-help-app",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
